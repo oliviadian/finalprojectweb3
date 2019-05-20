@@ -36,13 +36,16 @@ class Profile extends Component {
 
             <Carousel autoplay>
                 <div>
+                    
                             <Row>
                             <Card style={{  width: '100%', height: '900px' }}>
                                 <Col xs={12}>
+
                                     <Row style={{ margin: '16px 16px' }}>
                                         <Col xs>
                                             <Title><i> Biodata </i></Title>
-                                            </Col>
+                                        </Col>
+                                        
                                         <List
                                             size="large"
                                             // header={<div>Header</div>}

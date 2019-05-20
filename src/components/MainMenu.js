@@ -27,8 +27,8 @@ class Navbar extends Component {
                     <div className="leftMenu">
                         <LeftMenu />
                     </div>
-                    <Button className="barsMenu" type="primary">
-                        <span className="barsBtn">
+                    <Button className="barsMenu" type="primary" >
+                        <span className="barsBtn" >
                             <Icon type="star" theme="filled" />
                         </span>
                     </Button>

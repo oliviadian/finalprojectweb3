@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Row,Col,Typography,List } from 'antd';
 import {Menu, Icon} from 'antd';
 import { Card, Avatar } from 'antd';
-import Instagram from './Instagram.png';
+import Instagram from './instagram.png';
 import line from './line.png';
 import twitter from './twitter.png';
 import linkedin from './linkedin.png';
@@ -33,6 +33,9 @@ class Contact extends Component {
         return (
             <div>
                  <Row>
+                 <h2>Contact</h2>
+                    <hr/>
+                    <br/>
                  
                         <Row style={{ margin: '16px 16px' }}>
                             <Col xs><Title style={{textAlign:"center"}}><i>Feel free to contact me!</i></Title></Col>

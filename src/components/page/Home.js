@@ -12,11 +12,29 @@ class Home extends React.Component{
     render(){
         return(
 
-            <Carousel autoplay>
-                <div>
-                <img alt="example" src={Picture} />
-                </div>
-            </Carousel>
+    
+                    <div>
+                        <h2>Home</h2>
+                        <hr/>
+                        <br/>
+                        <Row>
+                            <Col xs={12}>
+                                 <Avatar size={400}  src={Picture} style={{align:'center', marginTop:'80px'}}/>
+                            </Col>
+                       
+
+                         <Col xs={12} style={{marginTop:'170px'}}>
+                            <h1>"</h1>
+                            <h3><i> A girl who always feel less and love to learn the new things. </i></h3>
+                            <h3><i> Love to play, share, and disscuss. </i></h3>
+                            <h1>"</h1>
+                        </Col>
+                        </Row>
+                    </div>
+
+                
+           
+
             );         
         
     }
