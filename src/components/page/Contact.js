@@ -1,23 +1,41 @@
 import React, {Component} from 'react';
 import { Row,Col,Typography,List } from 'antd';
 import {Menu, Icon} from 'antd';
+import { Card, Avatar } from 'antd';
+import Instagram from './Instagram.png';
+import line from './line.png';
+import twitter from './twitter.png';
+import linkedin from './linkedin.png';
+import { Button, Radio} from 'antd';
 
 
+const { Meta } = Card;
 const { Title } = Typography;
 const data = [
-    { name:'Address',icons:'environment',content:"Jl. Lempuyangan Tengah, Yogyakarta"},
-    { name:'Phone',icons:'phone',content:"+62 852-2859-9018"},
-    { name:'Email',icons:'mail',content:"icinbachan15@gmail.com"},
+    { name:'Address',icons:'environment',content:"Surakarta"},
+    { name:'Phone',icons:'phone',content:"+62 878-3552-4850"},
+    { name:'Email',icons:'mail',content:"oliviadiaan12@gmail.com"},
   ];
 
+  
 class Contact extends Component {
+    state = {
+        size: 'large',
+      };
+    
+      handleSizeChange = e => {
+        this.setState({ size: e.target.value });
+      };
+    
+     
     render() {
+        const size = this.state.size;
         return (
             <div>
                  <Row>
-                 <Col xs={12}>
+                 
                         <Row style={{ margin: '16px 16px' }}>
-                            <Col xs><Title>Shintya Devi Bachan</Title></Col>
+                            <Col xs><Title style={{textAlign:"center"}}><i>Feel free to contact me!</i></Title></Col>
                             <List
                                 size="large"
                                 // header={<div>Header</div>}
@@ -26,66 +44,68 @@ class Contact extends Component {
                                 dataSource={data}
                                 renderItem={item => (
                                     <List.Item>
-                                        <Icon type={item.icons} theme="filled"/> &nbsp;&nbsp; &nbsp;
+                                        <Icon type={item.icons} theme="outlined"/> &nbsp;&nbsp; &nbsp;
                                         <Typography.Text strong>{item.name} : </Typography.Text> {item.content}
                                     </List.Item>
                                 )}
                             />
-                            <Col xs><Title level={4}>uyetfsbjhggsefffdnmb</Title></Col>
-                            <Col xs>dfjgyerbgnsbcausdwwhjndbcysgywbkjnkdkjs</Col>
                         </Row>
-                    </Col>
-                    <Col xs={12}>
-                        <Row>
-                        <h3>Let's Keep in Touch</h3>
-                                    <form action="#">
-                                        <div className="input-grup">
-                                            <input type="text" placeholder="Enter your Name" id="name"
-                                                name="Enter your Name"/>
-                                            <input type="text" placeholder="Company " id="Company"
-                                                name="Companyname"/>
-                                            <input type="email" placeholder="Enter Your Email address "
-                                                id="email" name="email"/>
-                                            <input type="text" placeholder="Enter your phone Number"
-                                                id="phonenumber" name="phonenumber"/>
-                                        </div>
-                                        <div className="checkbox-grup">
-                                            <div className="single-check">
-                                                <input type="checkbox" id="Webdesign"/>
-                                                <label htmlFor="Webdesign">Web design</label>
-                                            </div>
-                                            <div className="single-check">
-                                                <input type="checkbox" id="Graphicdesign"/>
-                                                <label htmlFor="Graphicdesign">Graphic design</label>
-                                            </div>
-                                            <div className="single-check">
-                                                <input type="checkbox" id="uxdesign"/>
-                                                <label htmlFor="uxdesign">UX Design</label>
-                                            </div>
-                                            <div className="single-check">
-                                                <input type="checkbox" id="Gamedesign"/>
-                                                <label htmlFor="Gamedesign">Game design</label>
-                                            </div>
-                                            <div className="single-check">
-                                                <input type="checkbox" id="WebDevelopment"/>
-                                                <label htmlFor="WebDevelopment">Web Development</label>
-                                            </div>
-                                            <div className="single-check">
-                                                <input type="checkbox" id="UIDesign"/>
-                                                <label htmlFor="UIDesign">UI Design</label>
-                                            </div>
-                                        </div>
-                                        <div className="messages-area">
-                                            <textarea name="message" id="message" cols="30" rows="10"
-                                                placeholder="Write your message"></textarea>
-                                        </div>
-                                        <div className="submit-btn text-right">
-                                            <button className="btn ">Submit</button>
-                                        </div>
-                                    </form>
-                        </Row>
-                    </Col>
-                </Row>
+                  
+            <Col xs><Title style={{textAlign:"center"}}><i>Social Media Apps</i></Title></Col>
+            
+             <Row gutter={24}>
+                <Col span={6} ><Card
+                            style={{ width: 220, height: 218 }}
+                            cover={
+                                <img justify="center" alt="example" src={Instagram} style={{width:'25%', marginRight: -102, marginLeft:82, marginTop:36}}/>
+                            }
+                            // actions={[<Icon type="setting" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
+                            >
+                            <Meta 
+                            style={{textAlign:"center"}} title="Instagram"
+                           /> 
+                            <Button href="https://www.instagram.com/oliviabadawy/"type="primary" style={{paddingLeft:25, paddingRight:25, marginTop:23, marginLeft:29}} size={size} ghost> Visit me </Button>
+                            
+                        </Card>,
+                </Col>
+                <Col span={6} ><Card className="ant-col-6"
+                            style={{width: 220, height: 218 }}
+                            cover={
+                                <img alt="example" src={line} style={{width:'25%', marginRight: -102, marginLeft:82, marginTop:36}}/>
+                            }
+                            >
+                            <Meta
+                            style={{textAlign:"center"}} title="Line"
+                            />
+                             <Button href="http://line.me/ti/p/oliviadianp" type="primary" style={{paddingLeft:25, paddingRight:25, marginTop:23, marginLeft:29}} size={size} ghost> Visit me </Button>
+                        </Card>,
+                </Col>
+                <Col span={6} ><Card
+                            style={{ width: 220, height: 218 }}
+                            cover={
+                                <img alt="example" src={twitter} style={{width:'25%', marginRight: -102, marginLeft:82, marginTop:36}}/>
+                            }
+                            >
+                            <Meta
+                            style={{textAlign:"center"}} title="Twitter"
+                            />
+                             <Button href="https://twitter.com/oliviadianprtw" type="primary" style={{paddingLeft:25, paddingRight:25, marginTop:23, marginLeft:29}} size={size} ghost> Visit me </Button>
+                        </Card>,
+                </Col>
+                <Col span={6} ><Card
+                            style={{ width: 220, height: 218 }}
+                            cover={
+                                <img alt="example" src={linkedin} style={{width:'25%', marginRight: -102, marginLeft:82, marginTop:36}}/>
+                            }
+                           >
+                            <Meta
+                            style={{textAlign:"center"}} title="Linkedin"
+                             />
+                              <Button href="https://www.linkedin.com/in/olivia-dian-b16108185/"type="primary" style={{paddingLeft:25, paddingRight:25, marginTop:23, marginLeft:29}} size={size} ghost> Visit me </Button>
+                        </Card>,
+                </Col>
+            </Row>
+        </Row>
             </div>
         );
     }

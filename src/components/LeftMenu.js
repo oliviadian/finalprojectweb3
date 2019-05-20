@@ -25,7 +25,7 @@ class LeftMenu extends Component {
                     return(
                         <Menu.Item key={data.name}>
                             <Link to={data.url}>
-                                <Icon type={data.icons} theme="twoTone"/> {data.name}
+                                <Icon type={data.icons} theme="outlined"/> {data.name}
                             </Link>
                         </Menu.Item>
                     )

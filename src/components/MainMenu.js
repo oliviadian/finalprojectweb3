@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import LeftMenu from './LeftMenu'
-import RightMenu from './RightMenu'
 import { Drawer, Button, Icon } from 'antd';
 
 class Navbar extends Component {
@@ -22,14 +21,11 @@ class Navbar extends Component {
         return (
             <nav className="menuBar">
                 <div className="logo">
-                    <a href="">logo</a>
+                    <a href="">Olive's</a>
                 </div>
                 <div className="menuCon">
                     <div className="leftMenu">
                         <LeftMenu />
-                    </div>
-                    <div className="rightMenu">
-                        <RightMenu showDrawer={() => this.showDrawer()}/>
                     </div>
                     <Button className="barsMenu" type="primary">
                         <span className="barsBtn">
