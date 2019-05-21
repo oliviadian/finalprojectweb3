@@ -24,6 +24,7 @@ class Home extends React.Component{
                        
 
                          <Col xs={12} style={{marginTop:'170px'}}>
+                         <Title><i> Hi! Here is Olivia Dian</i></Title>
                             <h1>"</h1>
                             <h3><i> A girl who always feel less and love to learn the new things. </i></h3>
                             <h3><i> Love to play, share, and disscuss. </i></h3>
