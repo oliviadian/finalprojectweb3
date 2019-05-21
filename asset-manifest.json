@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/finalprojectweb3/static/css/main.5a9ff18f.chunk.css",
-    "main.js": "/finalprojectweb3/static/js/main.f2e6cd5a.chunk.js",
-    "main.js.map": "/finalprojectweb3/static/js/main.f2e6cd5a.chunk.js.map",
+    "main.css": "/finalprojectweb3/static/css/main.05e94ffa.chunk.css",
+    "main.js": "/finalprojectweb3/static/js/main.dd4eeda9.chunk.js",
+    "main.js.map": "/finalprojectweb3/static/js/main.dd4eeda9.chunk.js.map",
     "runtime~main.js": "/finalprojectweb3/static/js/runtime~main.9d9c5e7e.js",
     "runtime~main.js.map": "/finalprojectweb3/static/js/runtime~main.9d9c5e7e.js.map",
     "static/css/2.1ad4406c.chunk.css": "/finalprojectweb3/static/css/2.1ad4406c.chunk.css",
-    "static/js/2.271474b4.chunk.js": "/finalprojectweb3/static/js/2.271474b4.chunk.js",
-    "static/js/2.271474b4.chunk.js.map": "/finalprojectweb3/static/js/2.271474b4.chunk.js.map",
+    "static/js/2.cae5decf.chunk.js": "/finalprojectweb3/static/js/2.cae5decf.chunk.js",
+    "static/js/2.cae5decf.chunk.js.map": "/finalprojectweb3/static/js/2.cae5decf.chunk.js.map",
     "index.html": "/finalprojectweb3/index.html",
-    "precache-manifest.57c4d395125e566d161231e3867c56ef.js": "/finalprojectweb3/precache-manifest.57c4d395125e566d161231e3867c56ef.js",
+    "precache-manifest.8f731bdba02f8bb747774d3c22733a70.js": "/finalprojectweb3/precache-manifest.8f731bdba02f8bb747774d3c22733a70.js",
     "service-worker.js": "/finalprojectweb3/service-worker.js",
     "static/css/2.1ad4406c.chunk.css.map": "/finalprojectweb3/static/css/2.1ad4406c.chunk.css.map",
-    "static/css/main.5a9ff18f.chunk.css.map": "/finalprojectweb3/static/css/main.5a9ff18f.chunk.css.map"
+    "static/css/main.05e94ffa.chunk.css.map": "/finalprojectweb3/static/css/main.05e94ffa.chunk.css.map",
+    "static/media/instagram.png": "/finalprojectweb3/static/media/instagram.07e509ef.png",
+    "static/media/line.png": "/finalprojectweb3/static/media/line.bcfcbaa8.png",
+    "static/media/picture.jpg": "/finalprojectweb3/static/media/picture.299662b2.jpg",
+    "static/media/twitter.png": "/finalprojectweb3/static/media/twitter.b757f2bc.png"
   }
 }
